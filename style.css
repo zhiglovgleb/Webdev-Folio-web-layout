@@ -1,0 +1,361 @@
+html{
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', 'sans-serif;';
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+/* PAGE ============ */
+
+.page {
+	width: 100%;
+	height: 100vh;
+	min-height: 700px;
+	position: relative;
+	overflow: hidden;
+
+	background: #000 
+	url("img/bg.png") center no-repeat;
+	background-size: cover;
+}
+
+.container {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* HEADER ============ */
+
+.header {
+	margin-bottom: 6rem;
+	padding: 1rem 0;
+	background: #03256C;
+
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo img {
+	display: block;
+}
+
+.header-brand {
+
+	font-family: 'Montserrat';
+	font-size: 1.6rem;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.header-nav {
+	display: flex;
+}
+
+.header-nav-link {
+	margin-left: 1.5rem;
+
+	color: #FFF;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+
+	transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+	color: #16425B;
+}
+
+
+/* Content ============ */
+
+.content {
+	height: 100%;
+	width: 100%;
+	max-width: 565px;
+
+}
+
+.subtitle {
+	font-size: 1.4rem;
+	color: rgba(255, 255, 255, .6);
+	font-weight: 300;
+}
+
+.content-header {
+	margin-bottom: 35px;
+}
+
+.title {
+	margin-bottom: 10px;
+	font-size: 2rem;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.title span {
+	color: #03256C;
+}
+
+.text {
+	margin-bottom: 50px;
+	font-style: 1rem;
+	color: #fff;
+
+}
+
+/* btn ============ */
+
+.btn {
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1.1;
+	color: #fff;
+	font-weight: 500;
+	background-color: #03256C;
+	border-radius: 5px;
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+
+	font-family: inherit;
+
+	padding: 0.7rem 2rem;
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background-color: #1768AC;
+}
+
+.btn-full {
+	display: block;
+	width: 100%;
+	min-width: 280px;
+}
+
+/* aut	*/
+
+.aut {
+	max-height: 703px;
+	max-width: 392px;
+	position: absolute;
+	bottom: 0;
+	right: 16px;
+	
+}
+
+/* Footer ============ */
+
+.footer {
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	width: 100%;
+}
+
+/* Contacts ========*/
+
+.contacts {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+}
+
+.contacts-link {
+	margin-right: 2rem;
+	font-size: 1rem;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+
+	transition: decoration 0.2s linear;
+}
+
+.contacts-link:last-child {
+	margin-right: 0;
+}
+
+.contacts-link:hover {
+	text-decoration: underline;
+}
+
+.cont-ico {
+	margin-right: 6px;
+}
+
+/* input ============ */
+
+.form {
+	width: 100%;
+	max-width: 280px;
+}
+
+.input, 
+.textarea {
+	max-width: 250px;
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	color: #fff;
+	border-radius: 5px;
+
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	border: 0;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.input::placeholder {
+	color: #fff;
+}
+
+.form-group {
+	width: 280px;
+	margin-bottom: 20px;
+}
+
+.textarea {
+	height: 100px;
+	resize: none;
+}
+
+.textarea::placeholder {
+	color: #fff;
+}
+
+
+/* Media ============ */
+
+@media (max-width: 1000px){
+	.aut {
+		right: -100px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	/* Header  ============ */
+
+	.form {
+		margin: 0 auto;
+	}
+
+	/* Header  ============ */
+
+	.header-logo {
+		display: none;
+	}
+
+	.header-brand {
+		font-size: 1.2rem;
+	}
+
+	.header {
+		margin-bottom: 2rem;
+	}
+
+	/* page ============ */
+
+	.page {
+		min-height: 100vh;
+		height: auto;
+		padding-bottom: 2rem;
+	}
+
+	/* footer */
+
+	.footer {
+
+		position: static;
+	}
+
+	/*Content*/
+
+	.content {
+		max-width: none;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+
+		/* Contacts	*/
+
+	.contacts {
+		flex-direction: column;
+	}
+
+	.contacts-link {
+		margin-right: 0;
+		margin-bottom: .5rem;
+	}
+
+	.contacts-link:last-child {
+		margin-bottom: 0;
+	}
+
+		.contacts-link:last-child:after {
+		display: none;
+	}
+
+	/* Author */
+
+		.aut {
+		display: none;
+	}
+}
+
+@media (max-width: 570px) {
+
+	/* Header	*/
+
+	.header {
+		margin-bottom: 1rem;
+	}
+
+	.header-inner {
+		flex-direction: column;
+	}
+	.header-brand {
+		margin-bottom: 1rem;
+	}
+
+
+
+}
+
+@media (max-width: 320px) {
+
+	.subtitle {
+		font-size: 1.2rem;
+	}
+
+	.title {
+		font-size: 1.6rem;
+	}
+}
